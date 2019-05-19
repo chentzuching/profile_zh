@@ -15,104 +15,356 @@
 
 {{content}}
 
+<br>
+<br>
+<br>
+
 <h3>論文</h3>
-<ul class="list-group">
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<!--thead>
+<tr>
+<th>#</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Username</th>
+</tr>
+</thead-->
+<tbody>
+{% for paper in site.data.papers %}
+<tr>
+<td class="text-nowrap">{{ paper.name }}</td>
+<td class="text-nowrap">{{ paper.date }}</td>
+<td>{{ paper.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<!--ul class="list-group">
     {% for paper in site.data.papers %}
       <li class="list-group-item">
         {{ paper.name }}
       </li>
     {% endfor %}
-</ul>
+</ul-->
+
+<br>
 
 <h3>論文獎</h3>
-<ul class="list-group">
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for award in site.data.awards %}
+    <tr>
+    <td class="text-nowrap">{{ award.name }}</td>
+    <td class="text-nowrap">{{ award.date }}</td>
+    <td>{{ award.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul class="list-group">
   {% for award in site.data.awards %}
     <li class="list-group-item">
       {{ award.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
+
+<br>
 
 <h3>專書等</h3>
-<ul class="list-group">
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<!--thead>
+<tr>
+<th>#</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Username</th>
+</tr>
+</thead-->
+<tbody>
+{% for book in site.data.books %}
+<tr>
+<td class="text-nowrap">{{ book.name }}</td>
+<td class="text-nowrap">{{ book.date }}</td>
+<td>{{ book.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+<!--ul class="list-group">
   {% for book in site.data.books %}
     <li class="list-group-item">
       {{ book.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
+
+<br>
 
 <h3>學會、研討會等發表</h3>
-<ul class="list-group">
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for presentation in site.data.presentations %}
+    <tr>
+    <td class="text-nowrap">{{ presentation.name }}</td>
+    <td class="text-nowrap">{{ presentation.date }}</td>
+    <td>{{ presentation.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul class="list-group">
   {% for presentation in site.data.presentations %}
     <li class="list-group-item">
       {{ presentation.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
+
+<br>
 
 <h3>招待演講</h3>
-<ul class="list-group">
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for lecture in site.data.lectures %}
+    <tr>
+    <td class="text-nowrap">{{ lecture.name }}</td>
+    <td class="text-nowrap">{{ lecture.date }}</td>
+    <td>{{ lecture.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul class="list-group">
   {% for lecture in site.data.lectures %}
     <li class="list-group-item">
       {{ lecture.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
 
-工作坊
-<ul>
+<br>
+
+<h3>工作坊</h3>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for workshop in site.data.workshops %}
+    <tr>
+    <td class="text-nowrap">{{ workshop.name }}</td>
+    <td class="text-nowrap">{{ workshop.date }}</td>
+    <td>{{ workshop.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul>
   {% for workshop in site.data.workshops %}
     <li>
       {{ workshop.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
 
-教科書
-<ul>
-  {% for book in site.data.books %}
+<br>
+
+<h3>教科書</h3>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for textbook in site.data.textbooks %}
+    <tr>
+    <td class="text-nowrap">{{ textbook.name }}</td>
+    <td class="text-nowrap">{{ textbook.date }}</td>
+    <td>{{ textbook.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul>
+  {% for textbook in site.data.textbooks %}
     <li>
-      {{ book.name }}
+      {{ textbook.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
 
-報告書
-<ul>
+<br>
+
+<h3>報告書</h3>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for report in site.data.reports %}
+    <tr>
+    <td class="text-nowrap">{{ report.date }}</td>
+    <td>{{ report.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul>
   {% for report in site.data.reports %}
     <li>
       {{ report.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
 
-校內研究計劃
-<ul>
+<br>
+
+<h3>校內研究計劃</h3>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for int-project in site.data.int-projects %}
+    <tr>
+    <td class="text-nowrap">{{ int-project.date }}</td>
+    <td>{{ int-project.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul>
   {% for int-project in site.data.int-projects %}
     <li>
       {{ int-project.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
 
-校外研究計劃
-<ul>
+<br>
+
+<h3>校外研究計劃</h3>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for out-project in site.data.out-projects %}
+    <tr>
+    <td class="text-nowrap">{{ out-project.date }}</td>
+    <td>{{ out-project.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul>
   {% for out-project in site.data.out-projects %}
     <li>
       {{ out-project.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
 
-政府機関等工作
-<ul>
+<br>
+
+<h3>政府機関等工作</h3>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+    <!--thead>
+    <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Username</th>
+    </tr>
+    </thead-->
+    <tbody>
+    {% for gov-work in site.data.gov-works %}
+    <tr>
+    <td class="text-nowrap">{{ gov-work.date }}</td>
+    <td>{{ gov-work.content }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </div>
+<!--ul>
   {% for gov-work in site.data.gov-works %}
     <li>
       {{ gov-work.name }}
     </li>
   {% endfor %}
-</ul>
+</ul-->
 
 </body>
 </div>
