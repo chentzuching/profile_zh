@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>{{page.title}}</title>
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+{{content}}
+
+陳　姿菁  業績一覧
+
+論文
+<ul>
+    {% for paper in site.data.papers %}
+      <li>
+        {{ paper.name }}
+      </li>
+    {% endfor %}
+</ul>
+
+學會、研討會等發表
+<ul>
+  {% for presentation in site.data.presentations %}
+    <li>
+      {{ presentation.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+工作坊
+<ul>
+  {% for workshop in site.data.workshops %}
+    <li>
+      {{ workshop.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
