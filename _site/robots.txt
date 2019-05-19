@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /pofile_zh
+Disallow: /
+Disallow: /pofile_zh/
