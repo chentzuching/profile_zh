@@ -16,6 +16,24 @@
     {% endfor %}
 </ul>
 
+論文獎
+<ul>
+  {% for award in site.data.awards %}
+    <li>
+      {{ award.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+專書等
+<ul>
+  {% for book in site.data.books %}
+    <li>
+      {{ book.name }}
+    </li>
+  {% endfor %}
+</ul>
+
 學會、研討會等發表
 <ul>
   {% for presentation in site.data.presentations %}
@@ -25,11 +43,65 @@
   {% endfor %}
 </ul>
 
+招待演講
+<ul>
+  {% for lecture in site.data.lectures %}
+    <li>
+      {{ lecture.name }}
+    </li>
+  {% endfor %}
+</ul>
+
 工作坊
 <ul>
   {% for workshop in site.data.workshops %}
     <li>
       {{ workshop.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+教科書
+<ul>
+  {% for book in site.data.books %}
+    <li>
+      {{ book.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+報告書
+<ul>
+  {% for report in site.data.reports %}
+    <li>
+      {{ report.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+校內研究計劃
+<ul>
+  {% for int-project in site.data.int-projects %}
+    <li>
+      {{ int-project.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+校外研究計劃
+<ul>
+  {% for out-project in site.data.out-projects %}
+    <li>
+      {{ out-project.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+政府機関等工作
+<ul>
+  {% for gov-work in site.data.gov-works %}
+    <li>
+      {{ gov-work.name }}
     </li>
   {% endfor %}
 </ul>
