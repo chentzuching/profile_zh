@@ -6,22 +6,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{page.title}}</title>
 <meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="container">
 
+    <nav class="navbar navbar-collapse-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">陳姿菁 - 業績一覧</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#paper">論文</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#award">論文獎</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#book">專書等</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#presentation">學會、研討會等發表</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#lecture">招待演講</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#workshop">工作坊</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#textbook">教科書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#report">報告書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#int-project">校內研究計劃</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#out-project">校外研究計劃</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gov-work">政府機関等工作</a>
+            </li>
+            <!--li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                其他
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li-->
+            <!--li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li-->
+          </ul>
+          <!--form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form-->
+        </div>
+      </nav>
+
+<div id="paper"></div>
+<br>
+<br>
 <br>
 
-{{content}}
-
+<h4 class="text-center">論文</h4>
 <br>
-<br>
-<br>
-
-<h3>論文</h3>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
 <!--thead>
@@ -44,9 +104,13 @@
 </table>
 </div>
 
+<div id="award"></div>
+<br>
+<br>
 <br>
 
-<h3>論文獎</h3>
+<h4 class="text-center">論文獎</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -69,9 +133,13 @@
     </table>
     </div>
 
+<div id="book"></div>
+<br>
+<br>
 <br>
 
-<h3>專書等</h3>
+<h4 class="text-center">專書等</h4>
+<br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
 <!--thead>
@@ -94,9 +162,13 @@
 </table>
 </div>
 
+<div id="presentation"></div>
+<br>
+<br>
 <br>
 
-<h3>學會、研討會等發表</h3>
+<h4 class="text-center">學會、研討會等發表</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -119,9 +191,13 @@
     </table>
     </div>
 
+<div id="lecture"></div>
+<br>
+<br>
 <br>
 
-<h3>招待演講</h3>
+<h4 class="text-center">招待演講</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -144,9 +220,13 @@
     </table>
     </div>
 
+<div id="workshop"></div>
+<br>
+<br>
 <br>
 
-<h3>工作坊</h3>
+<h4 class="text-center">工作坊</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -169,9 +249,13 @@
     </table>
     </div>
 
+<div id="textbook"></div>
+<br>
+<br>
 <br>
 
-<h3>教科書</h3>
+<h4 class="text-center">教科書</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -194,9 +278,13 @@
     </table>
     </div>
 
+<div id="report"></div>
+<br>
+<br>
 <br>
 
-<h3>報告書</h3>
+<h4 class="text-center">報告書</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -218,9 +306,13 @@
     </table>
     </div>
 
+<div id="int-project"></div>
+<br>
+<br>
 <br>
 
-<h3>校內研究計劃</h3>
+<h4 class="text-center">校內研究計劃</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -242,9 +334,13 @@
     </table>
     </div>
 
+<div id="out-project"></div>
+<br>
+<br>
 <br>
 
-<h3>校外研究計劃</h3>
+<h4 class="text-center">校外研究計劃</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -266,9 +362,13 @@
     </table>
     </div>
 
+<div id="gov-work"></div>
+<br>
+<br>
 <br>
 
-<h3>政府機関等工作</h3>
+<h4 class="text-center">政府機関等工作</h4>
+<br>
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
     <!--thead>
@@ -290,6 +390,42 @@
     </table>
     </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
+            if(this.id != 'navbarDropdown'){
+              $('.navbar-collapse').collapse('hide');
+            }
+        });
+    </script>
 </body>
 </div>
 </html>
