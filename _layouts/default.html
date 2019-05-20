@@ -84,14 +84,6 @@
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
-<!--thead>
-<tr>
-<th>#</th>
-<th>First Name</th>
-<th>Last Name</th>
-<th>Username</th>
-</tr>
-</thead-->
 <tbody>
 {% for paper in site.data.papers %}
 <tr>
@@ -112,26 +104,18 @@
 <h4 class="text-center">論文獎</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for award in site.data.awards %}
-    <tr>
-    <td class="text-nowrap">{{ award.name }}</td>
-    <td class="text-nowrap">{{ award.date }}</td>
-    <td>{{ award.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for award in site.data.awards %}
+<tr>
+<td class="text-nowrap">{{ award.name }}</td>
+<td class="text-nowrap">{{ award.date }}</td>
+<td>{{ award.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="book"></div>
 <br>
@@ -142,14 +126,6 @@
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
-<!--thead>
-<tr>
-<th>#</th>
-<th>First Name</th>
-<th>Last Name</th>
-<th>Username</th>
-</tr>
-</thead-->
 <tbody>
 {% for book in site.data.books %}
 <tr>
@@ -170,26 +146,18 @@
 <h4 class="text-center">學會、研討會等發表</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for presentation in site.data.presentations %}
-    <tr>
-    <td class="text-nowrap">{{ presentation.name }}</td>
-    <td class="text-nowrap">{{ presentation.date }}</td>
-    <td>{{ presentation.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for presentation in site.data.presentations %}
+<tr>
+<td class="text-nowrap">{{ presentation.name }}</td>
+<td class="text-nowrap">{{ presentation.date }}</td>
+<td>{{ presentation.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="lecture"></div>
 <br>
@@ -199,26 +167,18 @@
 <h4 class="text-center">招待演講</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for lecture in site.data.lectures %}
-    <tr>
-    <td class="text-nowrap">{{ lecture.name }}</td>
-    <td class="text-nowrap">{{ lecture.date }}</td>
-    <td>{{ lecture.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for lecture in site.data.lectures %}
+<tr>
+<td class="text-nowrap">{{ lecture.name }}</td>
+<td class="text-nowrap">{{ lecture.date }}</td>
+<td>{{ lecture.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="workshop"></div>
 <br>
@@ -228,26 +188,18 @@
 <h4 class="text-center">工作坊</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for workshop in site.data.workshops %}
-    <tr>
-    <td class="text-nowrap">{{ workshop.name }}</td>
-    <td class="text-nowrap">{{ workshop.date }}</td>
-    <td>{{ workshop.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for workshop in site.data.workshops %}
+<tr>
+<td class="text-nowrap">{{ workshop.name }}</td>
+<td class="text-nowrap">{{ workshop.date }}</td>
+<td>{{ workshop.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="textbook"></div>
 <br>
@@ -257,26 +209,18 @@
 <h4 class="text-center">教科書</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for textbook in site.data.textbooks %}
-    <tr>
-    <td class="text-nowrap">{{ textbook.name }}</td>
-    <td class="text-nowrap">{{ textbook.date }}</td>
-    <td>{{ textbook.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for textbook in site.data.textbooks %}
+<tr>
+<td class="text-nowrap">{{ textbook.name }}</td>
+<td class="text-nowrap">{{ textbook.date }}</td>
+<td>{{ textbook.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="report"></div>
 <br>
@@ -286,25 +230,17 @@
 <h4 class="text-center">報告書</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for report in site.data.reports %}
-    <tr>
-    <td class="text-nowrap">{{ report.date }}</td>
-    <td>{{ report.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for report in site.data.reports %}
+<tr>
+<td class="text-nowrap">{{ report.date }}</td>
+<td>{{ report.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="int-project"></div>
 <br>
@@ -314,25 +250,17 @@
 <h4 class="text-center">校內研究計劃</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for int-project in site.data.int-projects %}
-    <tr>
-    <td class="text-nowrap">{{ int-project.date }}</td>
-    <td>{{ int-project.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for int-project in site.data.int-projects %}
+<tr>
+<td class="text-nowrap">{{ int-project.date }}</td>
+<td>{{ int-project.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="out-project"></div>
 <br>
@@ -342,25 +270,17 @@
 <h4 class="text-center">校外研究計劃</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for out-project in site.data.out-projects %}
-    <tr>
-    <td class="text-nowrap">{{ out-project.date }}</td>
-    <td>{{ out-project.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for out-project in site.data.out-projects %}
+<tr>
+<td class="text-nowrap">{{ out-project.date }}</td>
+<td>{{ out-project.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <div id="gov-work"></div>
 <br>
@@ -370,25 +290,17 @@
 <h4 class="text-center">政府機関等工作</h4>
 <br>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-    <!--thead>
-    <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-    </tr>
-    </thead-->
-    <tbody>
-    {% for gov-work in site.data.gov-works %}
-    <tr>
-    <td class="text-nowrap">{{ gov-work.date }}</td>
-    <td>{{ gov-work.content }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
+<table class="table table-bordered table-striped">
+<tbody>
+{% for gov-work in site.data.gov-works %}
+<tr>
+<td class="text-nowrap">{{ gov-work.date }}</td>
+<td>{{ gov-work.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 <br>
 <br>
@@ -415,17 +327,16 @@
 <br>
 <br>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
-            if(this.id != 'navbarDropdown'){
-              $('.navbar-collapse').collapse('hide');
-            }
-        });
-    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+  $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
+    if(this.id != 'navbarDropdown'){
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+</script>
 </body>
 </div>
 </html>
